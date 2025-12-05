@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ELAZION Gaming Portal - Inspired by Epic</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        /* GLOBAL STYLES (Epic Look) */
+        body {
+            margin: 0;
+            background-color: #121212; /* Dark background */
+            color: #f0f0f0; /* Light text */
+            font-family: 'Roboto', sans-serif;
+            user-select: none;
+            overflow-x: hidden;
+            text-align: center;
+        }
+
+        /* NAVIGATION BAR */
+        .navbar {
+            background-color: #1f1f1f;
+            padding: 15px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #333;
+        }
+
+        .logo {
+            font-size: 1.8em;
+            font-weight: 900;
+            color: #0078f2; /* Epic Blue/White contrast */
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        /* HOME PAGE CONTENT (Epic Store Layout) */
+        #home {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 30px 20px;
+        }
+
+        /* FEATURED SECTION */
+        .featured-game {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://via.placeholder.com/1200x500/121212/ffffff?text=F1+REACTION+TEST'); 
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+            max-width: 1200px;
+            height: 450px;
+            border-radius: 12px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: flex-start;
+            padding: 40px;
+            margin-bottom: 40px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            text-align: left;
+        }
+
+        .featured-game h2 {
+            font-size: 3em;
+            margin-bottom: 5px;
+            color: #fff;
+            text-shadow: 0 0 10px rgba(0, 0, 0, 1);
+        }
+
+        .featured-game p {
+            font-size: 1.1em;
+            color: #bbb;
+            max-width: 600px;
+            margin-bottom: 20px;
+        }
+
+        /* PLAY BUTTON */
+        #playBtn {
+            background: #0078f2;
+            padding: 15px 40px;
+            border-radius: 8px;
+            font-size: 1.4em;
+            font-weight: 700;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            transition: 0.2s;
+            box-shadow: 0 4px 15px rgba(0, 120, 242, 0.6);
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+
+        #playBtn:hover {
+            background: #2590ff;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 120, 242, 0.8);
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="navbar">
+    <div class="logo">Elazion Gaming Portal</div>
+</div>
+
+<div id="home">
+    
+    <h1 style="font-size: 2.5em; margin-bottom: 10px; font-weight: 900;">Games</h1>
+    <p style="color: #888; margin-bottom: 30px;">Discover the featured challenge of the day.</p>
+
+    <div class="featured-game">
+        <span style="background: #ff0000; padding: 5px 15px; border-radius: 4px; font-weight: bold; margin-bottom: 10px;">FEATURED CHALLENGE</span>
+        <h2>F1 Reaction Test</h2>
+        <p>Take the F1 Reaction Test and prove you have the reflexes of a Formula 1 driver at the starting line.</p>
+        
+        <button id="playBtn">Launch Game</button>
+    </div>
+
+</div>
+
+<script>
+document.getElementById("playBtn").onclick = () => {
+    window.location.href = "https://rexy-hash.github.io/elazion-gaming-portal/";
+};
+</script>
+
+</body>
+</html>
